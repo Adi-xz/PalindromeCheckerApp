@@ -1,26 +1,23 @@
-/**
- * Book My Stay App
- *
- * This class represents the entry point of the Hotel Booking Management System.
- * It prints a welcome message along with the application name and version.
- *
- * @author Student
- * @version 1.0
- */
-public class UseCase1HotelBookingApp {
 
-    /**
-     * Main method – entry point of the application.
-     * JVM starts execution from this method.
-     *
-     * @param args command line arguments
-     */
+public class UseCase2PalindromeCheckerApp {
+
     public static void main(String[] args) {
+        // Hardcoded input string
+        String input = "madam";
+        String reversed = "";
+        for (int i = input.length() - 1; i >= 0; i--) {
+            reversed += input.charAt(i);
+        }
 
-        System.out.println("====================================");
-        System.out.println(" Welcome to Book My Stay App ");
-        System.out.println(" Hotel Booking System v1.0 ");
-        System.out.println("====================================");
+        System.out.println("Input String: " + input);
 
+        // Check if input matches reversed string
+        if (input.equalsIgnoreCase(reversed)) {
+            System.out.println("Result: The string is a Palindrome.");
+        } else {
+            System.out.println("Result: The string is NOT a Palindrome.");
+        }
+        
+        System.out.println("System initialized successfully.");
     }
 }
